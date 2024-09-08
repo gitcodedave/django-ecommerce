@@ -9,7 +9,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 
 REDIS_URL = os.environ['REDIS_URL']
 
-ALLOWED_HOSTS = ['davestore-prod-572ad197703b.herokuapp.com/']
+ALLOWED_HOSTS = ['.davestore-prod-572ad197703b.herokuapp.com/']
 
 DATABASES = {
     'default': dj_database_url.config()
