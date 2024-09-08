@@ -15,3 +15,21 @@ DATABASES = {
         'PASSWORD': 'Burger408!'
     }
 }
+
+EMAIL_HOST = 'localhost'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+EMAIL_PORT = 2525
+
+CELERY_BROKER_URL = 'redis://localhost:6379/1' # 1 is set as our message broker
+
+CACHES = {
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "TIMEOUT": 10 * 60,
+        "LOCATION": "redis://127.0.0.1:6379/2", # Database 2 because 1 is already used by Celery
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    }
+}
