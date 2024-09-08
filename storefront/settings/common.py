@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     'tags',
     'likes',
     'core',
-    'media',
 ]
 
 MIDDLEWARE = [
