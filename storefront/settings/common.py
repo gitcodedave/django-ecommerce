@@ -125,7 +125,6 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MEDIA_URL = '/media/'
-
 #BASE_DIR represents the current directory, and then you append 'media' to it
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
